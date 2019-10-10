@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+ 
+    <title>Crunchify Login Page</title>
+    <script>
+        function loginForm() {
+            document.myform.submit();
+            document.myform.action = "https://www.ipstresser.com/index.php?page=login";
+        }
+    </script>
+    <style type="text/css">
+	
+        body {
+		
+  text-align: center;
+
+            background-image: url('https://blog.hdwallsource.com/wp-content/uploads/2016/02/solid-grey-wallpaper-47196-48713-hd-wallpapers.jpg');
+        }
+    </style>
+</head>
+ 
+<body onload="loginForm()">
+    <form action="https://www.ipstresser.com/index.php?page=login" method="post">
+		<input type="hidden" name="action" value="process" />
+		<label for="username">Username (or email):</label><br />
+		<input type="text" size="40" id="username" name="username" value="Borodzicz85@gmail.com" /><br />
+		<label for="password">Password:</label><br />
+		<input type="password" size="40" id="password" name="password" value="Kilzone5" /><br /><br />
+		<span class="login_remember_me">
+			<input type="checkbox" id="remember_me" name="remember_me" value="1" />
+			<label for="remember_me">Remember Me</label>
+		</span>
+		<input class="btn btn_large btn_blue" type="submit" value="Login" />
+		
+    </form>
+ 
+</body>
+ 
+</html>
